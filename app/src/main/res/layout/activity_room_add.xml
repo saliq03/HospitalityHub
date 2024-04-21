@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RoomAddActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#763B13"
+        android:elevation="4dp"
+        app:title="Room Add"
+        app:titleTextAppearance="@style/ToolbarTitleStyle"/>
+<!--        app:popupTheme="@style/AppTheme.PopupOverlay" -->
+
+
+    <EditText
+        android:id="@+id/addroom_roomname"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Room name"
+        android:textSize="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/roomdetails_border"
+        android:paddingStart="5dp"
+        />
+
+    <EditText
+        android:id="@+id/addroom_roomtype"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Room Type"
+        android:textSize="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roomdetails_border"
+        android:paddingStart="5dp"
+        />
+
+    <EditText
+        android:id="@+id/addroom_ACtype"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="AC Type"
+        android:textSize="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roomdetails_border"
+        android:paddingStart="5dp"
+        />
+
+    <EditText
+        android:id="@+id/addroom_roomnumber"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Room Number"
+        android:inputType="phone"
+        android:textSize="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roomdetails_border"
+        android:paddingStart="5dp"
+        />
+
+    <EditText
+        android:id="@+id/addroom_roomrate"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Room Rate"
+        android:textSize="35dp"
+        android:inputType="phone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roomdetails_border"
+        android:paddingStart="5dp"/>
+
+
+        <EditText
+            android:id="@+id/addroom_date"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Current Date(dd-mm-yyyy)"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/roomdetails_border"
+            android:paddingStart="5dp"
+            />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@drawable/button_bg"
+        android:textSize="40dp"
+        android:text="Add"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        />
+
+
+
+
+</LinearLayout>

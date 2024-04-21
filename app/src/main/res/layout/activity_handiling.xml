@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HandilingActivity"
+    android:background="#B8B6B6">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#763B13"
+        android:elevation="4dp"
+        app:title=" Hotel Management"
+        app:titleTextAppearance="@style/ToolbarTitleStyle"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        >
+    <LinearLayout
+        android:id="@+id/add_room"
+        android:layout_width="122dp"
+        android:layout_height="180dp"
+        android:background="@drawable/box_bg"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="7dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/add_"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Add"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=" Room"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_guest"
+        android:layout_width="122dp"
+        android:layout_height="180dp"
+        android:background="@drawable/box_bg"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="7dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/add_room">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/addperson_"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Add"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="New Guest"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Guest_booking_list"
+        android:layout_width="122dp"
+        android:layout_height="180dp"
+        android:background="@drawable/box_bg"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/add_guest">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/eye_"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Guest"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Booking List"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/booked_room_list"
+        android:layout_width="122dp"
+        android:layout_height="180dp"
+        android:background="@drawable/box_bg"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="7dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/add_room">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/eye_"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Booked"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Room List"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/remainning_room_list"
+        android:layout_width="122dp"
+        android:layout_height="180dp"
+        android:background="@drawable/box_bg"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="7dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/add_room"
+        android:layout_below="@+id/add_room">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/eye_"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Remainning"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Room List"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/all_room_list"
+        android:layout_width="122dp"
+        android:layout_height="180dp"
+        android:background="@drawable/box_bg"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/add_guest"
+        android:layout_below="@+id/add_room">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/all_room_"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="All"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Room List"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="120dp"
+     android:background="@drawable/box_bg"
+     android:layout_marginTop="30dp"
+     android:layout_below="@+id/booked_room_list"
+     android:layout_marginEnd="10dp"
+     android:layout_marginStart="10dp">
+
+     <ImageView
+         android:id="@+id/rupee_icon"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+         android:background="@drawable/rupee_bg"
+        app:srcCompat="@drawable/baseline_currency_rupee_24"
+         android:layout_centerVertical="true"
+         android:layout_marginStart="10dp"
+         android:paddingStart="10dp"
+         android:paddingTop="10dp"
+         android:paddingEnd="10dp"
+         android:paddingBottom="10dp"
+         />
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_toRightOf="@+id/rupee_icon"
+         android:layout_marginLeft="10dp"
+         android:layout_centerVertical="true"
+        >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Total Earning"
+             android:textStyle="bold"
+             android:textColor="#763B13"
+             android:textSize="18dp"
+             android:layout_marginBottom="5dp"
+             />
+         <TextView
+             android:id="@+id/earning"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="5500"
+             android:textColor="#232222"
+             android:textStyle="bold"
+             android:textSize="15dp"/>
+     </LinearLayout>
+
+ </RelativeLayout>
+
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddGuestActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#763B13"
+        android:elevation="4dp"
+        app:title="Booking"
+        app:titleTextAppearance="@style/ToolbarTitleStyle"/>
+
+    <EditText
+        android:id="@+id/addguest_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Guest name"
+        android:textSize="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roomdetails_border"
+        android:paddingStart="5dp"
+        />
+
+    <EditText
+        android:id="@+id/addguest_roomtype"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Room Type"
+        android:textSize="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roomdetails_border"
+        android:paddingStart="5dp"
+        />
+
+    <EditText
+        android:id="@+id/addguest_ACtype"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="AC Type"
+        android:textSize="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roomdetails_border"
+        android:paddingStart="5dp"
+        />
+
+    <EditText
+        android:id="@+id/addguest_roomavailable"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Avaialable Rooms"
+        android:textSize="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roomdetails_border"
+        android:paddingStart="5dp"
+        />
+
+    <EditText
+        android:id="@+id/addguest_actual_roomrate"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Actual Room Rate"
+        android:textSize="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roomdetails_border"
+        android:paddingStart="5dp"/>
+
+    <EditText
+        android:id="@+id/addguest_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Mobile"
+        android:textSize="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roomdetails_border"
+        android:paddingStart="5dp"/>
+
+
+    <EditText
+        android:id="@+id/addroom_date"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Current Date(dd-mm-yyyy)"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/roomdetails_border"
+        android:paddingStart="5dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        >
+        <EditText
+            android:id="@+id/addroom_checkin_date"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:hint="CHECK-IN Date"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/roomdetails_border"
+            android:paddingStart="5dp"/>
+
+        <EditText
+            android:id="@+id/addroom_checkout_date"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="CHECK-OUT Date"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:background="@drawable/roomdetails_border"
+            android:paddingStart="5dp"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@drawable/button_bg"
+        android:textSize="40dp"
+        android:text="Add"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        />
+
+
+</LinearLayout>
